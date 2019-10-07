@@ -249,8 +249,8 @@ public class YccMavenCheck {
     }
         
     public static void main(String[] args) {
-        java.io.File dir=new java.io.File("C:/Users/016356/.m2/repository");
-        //java.io.File dir=new java.io.File("/Users/yenchechang/.m2/repository");
+        //java.io.File dir=new java.io.File("C:/Users/016356/.m2/repository");
+        java.io.File dir=new java.io.File("/Users/yenchechang/.m2/repository");
         
         YccMavenCheck.toDo(dir);
         
