@@ -1,4 +1,4 @@
-package YccStudio.SpringWS.ws;
+package YccStudio.YccWebSocket.ws;
 
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;

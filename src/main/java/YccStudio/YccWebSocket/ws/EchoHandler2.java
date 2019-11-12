@@ -1,4 +1,4 @@
-package YccStudio.SpringWS.ws;
+package YccStudio.YccWebSocket.ws;
 import java.io.IOException;
 
 import javax.websocket.OnClose;

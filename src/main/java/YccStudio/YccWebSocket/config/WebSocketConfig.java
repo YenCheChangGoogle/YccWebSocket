@@ -1,6 +1,6 @@
-package YccStudio.SpringWS.config;
+package YccStudio.YccWebSocket.config;
 
-import YccStudio.SpringWS.ws.EchoHandler;
+import YccStudio.YccWebSocket.ws.EchoHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.socket.WebSocketHandler;

@@ -1,8 +1,9 @@
-package YccStudio.SpringWS;
+package YccStudio.YccWebSocket;
 
-import YccStudio.SpringWS.config.RootConfig;
-import YccStudio.SpringWS.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
+
+import YccStudio.YccWebSocket.config.RootConfig;
+import YccStudio.YccWebSocket.config.WebConfig;
 
 //使用注解驅動的配置初始化器
 public class WsWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
