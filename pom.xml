@@ -15,7 +15,7 @@
 		
 		<!-- <runtime-tomcat8.version>8.0.14</runtime-tomcat8.version> --> <!-- 直接在透過pom.xml在ECLIPSE內啟動執行TOMCAT的版本 -->
 		<!-- <runtime-tomcat8.version>9.0.27</runtime-tomcat8.version> --> <!-- 直接在透過pom.xml在ECLIPSE內啟動執行TOMCAT的版本 -->
-		<runtime-tomcat8.version>8.5.47</runtime-tomcat8.version> <!-- 直接在透過pom.xml在ECLIPSE內啟動執行TOMCAT的版本 -->
+		<runtime-tomcat8.version>9.0.30</runtime-tomcat8.version> <!-- 直接在透過pom.xml在ECLIPSE內啟動執行TOMCAT的版本 -->
 		
 		<tomcat-embed-logging-juli.version>8.5.2</tomcat-embed-logging-juli.version>
 		<tomcat-embed-logging-log4j.version>8.5.2</tomcat-embed-logging-log4j.version>
