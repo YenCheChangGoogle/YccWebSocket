@@ -1,0 +1,36 @@
+package YccStudio.WebCam;
+
+import org.bytedeco.javacpp.opencv_core.IplImage;
+import static org.bytedeco.javacpp.opencv_imgcodecs.cvSaveImage;
+import org.bytedeco.javacv.CanvasFrame;
+import org.bytedeco.javacv.Frame;
+import org.bytedeco.javacv.FrameGrabber;
+import org.bytedeco.javacv.OpenCVFrameConverter;
+import org.bytedeco.javacv.VideoInputFrameGrabber;
+
+public class WebCamDemo2 {
+
+    public static void main(String[] args) throws Exception {
+        CanvasFrame canvas = new CanvasFrame("WebCam Demo");
+        canvas.setDefaultCloseOperation(javax.swing.JFrame.EXIT_ON_CLOSE);
+
+        VideoInputFrameGrabber webcam = new VideoInputFrameGrabber(0); // 1 for next camera
+        FrameGrabber grabber = webcam;
+
+        grabber.start();
+
+        OpenCVFrameConverter.ToIplImage converter = new OpenCVFrameConverter.ToIplImage();
+
+        Frame frame;
+        while (true) {
+            frame = grabber.grab();
+            if (frame != null) {
+                canvas.showImage(frame);
+                IplImage img = converter.convert(frame);
+                cvSaveImage("C:/Test/X.jpg", img); // 保存到指定路徑
+                canvas.waitKey(1000); // 延遲一秒
+            }
+        }
+    }
+
+}
